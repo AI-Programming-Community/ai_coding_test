@@ -8,21 +8,32 @@ This is a dedicated repository of test questions for evaluating AI coding capabi
 
 ```
 .
-├── README.md
-├── README.en.md
-├── LICENSE
-└── questions/
-    ├── python/
-    ├── javascript/
-    ├── java/
-    └── ...
+├── README.md          # Chinese documentation
+├── README.en.md       # English documentation  
+├── LICENSE            # License file
+└── questions/         # Test questions directory
+    └── html-css-navigation/  # HTML/CSS navigation layout problem
+        ├── index.html        # HTML file
+        └── styles.css        # CSS styles file
 ```
 
 ## Usage
 
 1. Clone this repository
 2. Select the appropriate question directory as needed
-3. Run tests and evaluate results
+3. Review the problem description and requirements
+4. Write or modify code to solve the problem
+5. Open the HTML file in a browser to verify results
+
+## Current Test Questions
+
+### HTML/CSS Navigation Layout Problem
+- **Location**: `questions/html-css-navigation/`
+- **Problem**: Navigation bar is currently left-aligned, needs to be centered
+- **Files**: 
+  - `index.html` - HTML file with navigation structure
+  - `styles.css` - CSS styles file that needs modification
+- **Hint**: Check the comments in the CSS file to find the property that needs to be changed
 
 ## Contributing
 

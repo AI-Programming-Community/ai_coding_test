@@ -8,20 +8,32 @@
 
 ```
 .
-├── README.md
-├── README.en.md
-└── questions/
-    ├── python/
-    ├── javascript/
-    ├── java/
-    └── ...
+├── README.md          # 中文说明文档
+├── README.en.md       # 英文说明文档
+├── LICENSE            # 许可证文件
+└── questions/         # 测试题目目录
+    └── html-css-navigation/  # HTML/CSS导航栏布局问题
+        ├── index.html        # HTML文件
+        └── styles.css        # CSS样式文件
 ```
 
 ## 使用方法
 
 1. 克隆此仓库
 2. 根据需要选择相应的试题目录
-3. 运行测试并评估结果
+3. 查看题目描述和要求
+4. 编写或修改代码解决问题
+5. 在浏览器中打开HTML文件验证结果
+
+## 当前测试题目
+
+### HTML/CSS导航栏布局问题
+- **位置**: `questions/html-css-navigation/`
+- **问题描述**: 导航栏目前靠左对齐，需要修复为居中显示
+- **文件**: 
+  - `index.html` - 包含导航栏结构的HTML文件
+  - `styles.css` - 需要修改的CSS样式文件
+- **提示**: 查看CSS文件中的注释，找到需要修改的属性
 
 ## 贡献
 
