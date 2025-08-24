@@ -12,7 +12,10 @@
 ├── README.en.md       # 英文说明文档
 ├── LICENSE            # 许可证文件
 └── questions/         # 测试题目目录
-    └── html-css-navigation/  # HTML/CSS导航栏布局问题
+    ├── html-css-navigation/  # HTML/CSS导航栏布局问题
+    │   ├── index.html        # HTML文件
+    │   └── styles.css        # CSS样式文件
+    └── left-side-navigation/ # 左侧导航栏交互问题
         ├── index.html        # HTML文件
         └── styles.css        # CSS样式文件
 ```
@@ -34,6 +37,14 @@
   - `index.html` - 包含导航栏结构的HTML文件
   - `styles.css` - 需要修改的CSS样式文件
 - **提示**: 查看CSS文件中的注释，找到需要修改的属性
+
+### 左侧导航栏交互问题
+- **位置**: `questions/left-side-navigation/`
+- **问题描述**: 左侧导航栏需要改为平时隐藏，鼠标移动到左侧时滑动显示
+- **文件**: 
+  - `index.html` - 包含左侧导航结构的HTML文件
+  - `styles.css` - 需要修改的CSS样式文件
+- **提示**: 需要添加鼠标悬停效果和滑动动画
 
 ## 贡献
 

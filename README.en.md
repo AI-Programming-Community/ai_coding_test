@@ -12,7 +12,10 @@ This is a dedicated repository of test questions for evaluating AI coding capabi
 ├── README.en.md       # English documentation  
 ├── LICENSE            # License file
 └── questions/         # Test questions directory
-    └── html-css-navigation/  # HTML/CSS navigation layout problem
+    ├── html-css-navigation/  # HTML/CSS navigation layout problem
+    │   ├── index.html        # HTML file
+    │   └── styles.css        # CSS styles file
+    └── left-side-navigation/ # Left-side navigation interaction problem
         ├── index.html        # HTML file
         └── styles.css        # CSS styles file
 ```
@@ -34,6 +37,14 @@ This is a dedicated repository of test questions for evaluating AI coding capabi
   - `index.html` - HTML file with navigation structure
   - `styles.css` - CSS styles file that needs modification
 - **Hint**: Check the comments in the CSS file to find the property that needs to be changed
+
+### Left-side Navigation Interaction Problem
+- **Location**: `questions/left-side-navigation/`
+- **Problem**: Left-side navigation needs to be hidden by default and slide out when mouse moves to the left edge
+- **Files**: 
+  - `index.html` - HTML file with left-side navigation structure
+  - `styles.css` - CSS styles file that needs modification
+- **Hint**: Need to add hover effects and slide animations
 
 ## Contributing
 

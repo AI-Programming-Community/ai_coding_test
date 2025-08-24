@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>左侧导航栏布局</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="layout-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>网站导航</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">🏠</span>
+                            <span class="nav-text">首页</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">👥</span>
+                            <span class="nav-text">用户管理</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">📊</span>
+                            <span class="nav-text">数据分析</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">⚙️</span>
+                            <span class="nav-text">系统设置</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">📞</span>
+                            <span class="nav-text">联系我们</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <h1>欢迎使用管理系统</h1>
+                <p>左侧导航栏始终保持可见状态，方便快速访问各个功能模块</p>
+                <p>修改目标：将左侧导航栏改为平时隐藏，鼠标移动到左侧时，再滑动显示出来。</p>
+            </header>
+            
+            <section class="content-section">
+                <div class="card">
+                    <h2>仪表板概览</h2>
+                    <p>这里是主要内容区域，显示各种统计信息和操作面板。</p>
+                </div>
+                
+                <div class="card">
+                    <h2>最近活动</h2>
+                    <p>显示用户最近的操作记录和系统事件。</p>
+                </div>
+                
+                <div class="card">
+                    <h2>系统状态</h2>
+                    <p>当前系统运行状态和性能指标监控。</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
