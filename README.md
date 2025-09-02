@@ -46,6 +46,23 @@
   - `styles.css` - 需要修改的CSS样式文件
 - **提示**: 需要添加鼠标悬停效果和滑动动画
 
+### Redis并发读取缓存问题
+- **位置**: `questions/concurrent-redis-reading/`
+- **问题描述**: Redis缓存服务存在并发读取bug，需要通过运行test_cache.py发现并修复
+- **文件**: 
+  - `app.py` - Flask应用主文件
+  - `test_cache.py` - 测试文件用于发现bug
+  - `requirements.txt` - Python依赖文件
+- **提示**: 运行测试文件发现具体问题，修复并发读取相关的bug
+
+### HTML转Markdown表格支持
+- **位置**: `questions/html-to-markdown/`
+- **问题描述**: 现有的Ruby函数无法正确处理HTML表格转换到Markdown
+- **文件**: 
+  - `html_to_markdown.rb` - Ruby转换函数文件
+  - `readme.md` - 问题说明文件
+- **提示**: 需要添加表格转换功能，支持HTML表格到Markdown表格的转换
+
 ## 贡献
 
 欢迎提交新的测试用例和改进意见。

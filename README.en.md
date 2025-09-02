@@ -46,6 +46,23 @@ This is a dedicated repository of test questions for evaluating AI coding capabi
   - `styles.css` - CSS styles file that needs modification
 - **Hint**: Need to add hover effects and slide animations
 
+### Redis Concurrent Reading Cache Problem
+- **Location**: `questions/concurrent-redis-reading/`
+- **Problem**: Redis caching service has concurrent reading bugs that need to be discovered and fixed by running test_cache.py
+- **Files**: 
+  - `app.py` - Flask application main file
+  - `test_cache.py` - Test file for discovering bugs
+  - `requirements.txt` - Python dependencies file
+- **Hint**: Run the test file to discover specific issues, fix bugs related to concurrent reading
+
+### HTML to Markdown Table Support
+- **Location**: `questions/html-to-markdown/`
+- **Problem**: Existing Ruby function cannot properly handle HTML table conversion to Markdown
+- **Files**: 
+  - `html_to_markdown.rb` - Ruby conversion function file
+  - `readme.md` - Problem description file
+- **Hint**: Need to add table conversion functionality, supporting HTML table to Markdown table conversion
+
 ## Contributing
 
 Contributions of new test cases and improvements are welcome.
