@@ -12,12 +12,6 @@ This is a dedicated repository of test questions for evaluating AI coding capabi
 ├── README.en.md       # English documentation  
 ├── LICENSE            # License file
 └── questions/         # Test questions directory
-    ├── html-css-navigation/  # HTML/CSS navigation layout problem
-    │   ├── index.html        # HTML file
-    │   └── styles.css        # CSS styles file
-    └── left-side-navigation/ # Left-side navigation interaction problem
-        ├── index.html        # HTML file
-        └── styles.css        # CSS styles file
 ```
 
 ## Usage

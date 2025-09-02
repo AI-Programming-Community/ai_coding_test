@@ -12,12 +12,6 @@
 ├── README.en.md       # 英文说明文档
 ├── LICENSE            # 许可证文件
 └── questions/         # 测试题目目录
-    ├── html-css-navigation/  # HTML/CSS导航栏布局问题
-    │   ├── index.html        # HTML文件
-    │   └── styles.css        # CSS样式文件
-    └── left-side-navigation/ # 左侧导航栏交互问题
-        ├── index.html        # HTML文件
-        └── styles.css        # CSS样式文件
 ```
 
 ## 使用方法
