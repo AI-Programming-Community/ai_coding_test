@@ -57,6 +57,23 @@ This is a dedicated repository of test questions for evaluating AI coding capabi
   - `readme.md` - Problem description file
 - **Hint**: Need to add table conversion functionality, supporting HTML table to Markdown table conversion
 
+### Log Analyzer
+- **Location**: `log-analyzer`
+- **Problem Description**: Write a program to read a very large log file (e.g., hundreds of MB of text)
+  - Format: `[2025-09-19 12:30:45] INFO user_name action_name job_status`
+  - Requirements: Count the number of operations per user, count the occurrences of each Action
+  - Output: A JSON formatted report including user statistics, Action statistics, and ERROR ratio
+  - The program must support streaming read (cannot load the entire file into memory at once).
+
+### Multi-threaded Web Crawler
+- **Problem Description**: Implement a simple concurrent web crawler
+  - Input a starting URL and depth n
+  - Recursively crawl links on the page until depth n is reached
+  - Use multi-threading/coroutines to accelerate requests
+  - Count the total number of pages visited and the number of pages containing specified keywords
+  - If encountering non-HTML pages such as docx, pdf, etc., ensure the filenames are saved correctly
+  - All downloaded static pages should be able to link to each other for navigation
+
 ## Contributing
 
 Contributions of new test cases and improvements are welcome.
