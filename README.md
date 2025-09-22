@@ -59,11 +59,15 @@
 
 ### 日志分析器
 - **位置**: `log-analyzer`
-- **问题描述**：编写一个程序，读取一个超大日志文件（例如几百 MB 的文本）
-  - 格式为：`[2025-09-19 12:30:45] INFO user_name action_name job_status`
-  - 要求：统计每个用户的操作次数，统计每种 Action 出现的次数
-  - 输出：JSON格式的报告，包含用户统计、Action 统计，以及 ERROR 占比
-  - 程序需支持流式读取（不能一次性读入内存）。
+- **问题描述**：编写一个程序，读取日志文件（例如几百MB的文本）
+  - 日志格式： client_ip remote_user - [time] "method url version" status body_bytes_sent "http_referer" "http_user_agent"
+  - 要求1：统计总访问量PV，统计总的UV（client_ip+http_user_agent组合），总访问独立client_ip数，总平均响应时间（request_time对应），总请求中status响应不是200的占比
+  - 要求2：按http_host字段分组统计输出每个http_host访问量TOP N的url，注意从http_referer中提取http_host
+  - 要求3：统计每个http_host的TOP N的url的请求次数，耗时大于1s次数，耗时大于1s的占比，最大耗时，平均耗时
+  - 要求4：程序需支持流式读取（不能一次性读入内存），TOP N可以配置，默认N=5。
+  - 输出：以markdown格式输出统计结果到文件
+- **文件**：
+  - `access_1000000.log`，从zip解压而来
 
 ### 多线程爬虫
 - **问题描述**：实现一个简单的并发爬虫

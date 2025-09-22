@@ -59,11 +59,15 @@ This is a dedicated repository of test questions for evaluating AI coding capabi
 
 ### Log Analyzer
 - **Location**: `log-analyzer`
-- **Problem Description**: Write a program to read a very large log file (e.g., hundreds of MB of text)
-  - Format: `[2025-09-19 12:30:45] INFO user_name action_name job_status`
-  - Requirements: Count the number of operations per user, count the occurrences of each Action
-  - Output: A JSON formatted report including user statistics, Action statistics, and ERROR ratio
-  - The program must support streaming read (cannot load the entire file into memory at once).
+- **Problem Description**: Write a program to read log files (e.g., several hundred MB of text)
+  - Log format: client_ip remote_user - [time] “method url version” status body_bytes_sent ‘http_referer’ “http_user_agent”
+  - Requirement 1: Calculate total page views (PV), total unique visitors (UV) (client_ip + http_user_agent combinations), total distinct client_ip visits, average response time (corresponding to request_time), and percentage of requests with non-200 status responses.
+  - Requirement 2: Group by http_host field and output the TOP N most visited URLs per http_host. Note: Extract http_host from http_referer.
+  - Requirement 3: Count requests for the TOP N URLs per http_host, count requests taking >1s, percentage of requests taking >1s, maximum latency, average latency
+  - Requirement 4: Support streaming read (cannot load entire data into memory at once). TOP N is configurable, default N=5.
+  - Output: Export statistics to a file in Markdown format
+- **Files**:
+  - `access_1000000.log`, extracted from the zip archive
 
 ### Multi-threaded Web Crawler
 - **Problem Description**: Implement a simple concurrent web crawler
